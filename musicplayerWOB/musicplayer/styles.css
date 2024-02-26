@@ -1,0 +1,459 @@
+body {
+    background-color: #0b1026;
+    color: aliceblue;
+    overflow-x: hidden;
+}
+
+/* Navigation bar */
+#navigation {
+    display: flex;
+    height: 12vh;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    background-color: #0b1026;
+    z-index: 5;
+    padding-left: 3vw;
+}
+
+#logo-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 30%;
+}
+
+#logo-container div{
+    padding: 7px;
+}
+
+#logo{
+    margin-right: 10vw;
+}
+
+#logo a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+#search-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 60%;
+}
+
+#search-container div{
+    padding: 5px;
+}
+
+#search {
+    background-color: #1c2651;
+    border-radius: 20px 20px 20px 20px;
+    margin-right: 5vw;
+}
+
+#search div {
+    padding: 7px;
+}
+
+#search form {
+    display: inline-block;
+}
+
+::placeholder {
+    color: rgb(152, 152, 152);
+}
+
+input[type="text"] {
+    color: lightgray;
+    background-color: #1c2651;
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+#notification{
+    margin-right: 5vw;
+}
+
+i {
+    color: aliceblue;
+}
+
+/* Main */
+#playlist {
+    margin-top: 5%;
+    width: 100vw;
+}
+
+/* Banner */
+main {
+    width: 50%;
+    margin: 30px 30px;
+    display: inline-block;
+}
+
+.banner {
+    /* width: 60%; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner img {
+    /* width: 15vw; */
+    height: 50vh;
+    padding: 4px;
+}
+
+/* Latest release */
+.heading {
+    font-family: sans-serif;
+}
+
+.latest-release {
+    /* width: 60%; */
+    width: 100%;
+}
+
+#latest-music {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.latest-music-card {
+    width: 50%;
+    height: 10%;
+}
+
+.song-image {
+    display: inline-block;
+}
+
+.song-image img {
+    width: 70px;
+    height: 70px;
+}
+
+.song-name {
+    font-family: sans-serif;
+    display: inline-block;
+    position: relative;
+    bottom: 20px;
+    padding: 4px;
+    font-weight: 700;
+    z-index: 1;
+}
+
+.song-name p {
+    padding: 0;
+    margin: 0;
+    font-size: 0.6rem;
+    color: lightgrey;
+}
+
+.song-action {
+    display: inline-block;
+    position: relative;
+    left: 20%;
+    bottom: 30px;
+    padding: 4px;
+    z-index: 1;
+}
+
+.song-action p {
+    padding: 0;
+    margin: 0;
+    font-size: 0.7rem;
+    color: lightgrey;
+}
+
+/* Aside */
+aside {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 3.5%;
+    margin-left: 22%;
+    width: 19%;
+}
+
+#queue {
+    display: inline-block;
+    width: 100%;
+    position: sticky;
+    margin-left: -1%;
+    background-color: #0b1026;
+    margin-top: -2%;
+}
+
+#queue a {
+    text-decoration: none;
+}
+
+#queue-heading {
+    font-family: sans-serif;
+    font-weight: 900;
+}
+
+#queue-dropdown {
+    color: aqua;
+    font-size: 0.7rem;
+    margin-left: 9%;
+}
+
+#queue-songs {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    height: 100vh;
+    overflow-y: scroll;
+    margin-top: 10%;
+}
+
+#queue-card {
+    display: flex;
+    max-height: 10vh;
+    width: 100%;
+    margin-bottom: 10%;
+    align-items: center;
+}
+
+#left{
+    display: flex;
+    width: 40%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#left span{
+    padding-left: 3px;
+}
+
+#right{
+    display: flex;
+    width: 20%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.queue-card-image {
+    width: 40px;
+    height: 40px;
+}
+
+.queue-num {
+    font-family: sans-serif;
+    font-size: 0.6rem;
+    color: lightgrey;
+}
+
+.queue-song-name {
+    font-family: sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+/* Popular artist */
+.artist-image {
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+}
+
+.image-card {
+    margin: -2%;
+}
+
+.image-card figure a img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.image-card figure a img:hover{
+    opacity: 0.7;
+}
+
+.play-position{
+    z-index: 2;
+
+}
+
+.image-card figure figcaption {
+    font-size: 0.6rem;
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Genre */
+#genre {
+    display: flex;
+    width: 60vw;
+    height: 15vh;
+    justify-content: space-around;
+    background-color: #101743;
+    margin-top: 6vh;
+}
+
+.genre-image {
+    height: 90%;
+    width: 15%;
+    position: relative;
+}
+
+.genre-image img {
+    height: 95%;
+    width: 70%;
+    border-radius: 50%;
+    margin-bottom: 2px;
+    margin-top: 4px;
+}
+
+.blur {
+    filter: blur(0.75px);
+}
+
+.float-text {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 20%;
+    right: 50%;
+    font-weight: bold;
+    text-align: center;
+    filter: blur(0px);
+}
+
+/* Occasion */
+#occasion {
+    display: flex;
+    height: 20vh;
+    width: 60vw;
+    justify-content: space-around;
+    margin-bottom: 10vh;
+    margin-top: 10vh;
+}
+
+.occasion-image {
+    height: 100%;
+    width: 30%;
+    position: relative;
+}
+
+.occasion-image img {
+    height: 100%;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.occasion-image img:hover {
+    height: 107%;
+    width: 107%;
+}
+
+.occasion-image p {
+    position: absolute;
+    top: 35%;
+    right: 35%;
+    color: white;
+    font-weight: 900;
+    text-align: center;
+}
+
+/* latest */
+#latest-tamil{
+    margin-bottom: 10vh;
+}
+
+#latest-container {
+    display: flex;
+    height: 20vh;
+    width: 60vw;
+    justify-content: space-around;
+}
+
+.latest-image {
+    height: 90%;
+    width: 15%;
+}
+
+.latest-image img {
+    height: 70%;
+    width: 90%;
+    margin-bottom: 2px;
+}
+
+/* Music player */
+#music-player{
+    background-color: rgb(59, 59, 59);
+    position: fixed;
+    bottom: 0px;
+    height: 10vh;
+    width: 96.5vw;
+    z-index: 5;
+    display: flex;
+    padding: 5px;
+}
+
+#player-details{
+    display: flex;
+    width: 20vw;
+    height: 100%;
+    align-items: center;
+}
+
+#player-details img{
+    height: 100%;
+    width: 5vw;
+    margin-right: 5px;
+}
+
+#player-controls{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 60vw;
+    align-items: center;
+    margin-left: -3vw;
+}
+
+#controls{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 18vw;
+    margin-top: 1%;
+}
+
+#controls i{
+    font-size: 1rem;
+}
+
+#progress-bar{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 38vw;
+}
+
+#progress{
+    width: 26%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#player-volume{
+    width: 20vw;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -5vw;
+}
